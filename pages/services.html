@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apex Moto — Full list of auto repair services. Engine, transmission, brakes, EV & hybrid, suspension, electrical, and more.">
+  <title>Services | Apex Moto Auto Repair</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Apex Moto Home">
+        <div class="nav__logo-mark" aria-hidden="true">⚙</div>
+        APEX<span>MOTO</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a class="nav__link active" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="reviews.html">Reviews</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a class="nav__phone" href="tel:+17605550182">(760) 555-0182</a>
+        <a class="btn btn--primary btn--sm" href="contact.html">Book Service</a>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav__mobile" aria-label="Mobile navigation">
+    <ul class="nav__mobile-links" role="list">
+      <li><a class="nav__mobile-link" href="services.html">Services</a></li>
+      <li><a class="nav__mobile-link" href="about.html">About</a></li>
+      <li><a class="nav__mobile-link" href="reviews.html">Reviews</a></li>
+      <li><a class="nav__mobile-link" href="contact.html">Contact</a></li>
+      <li><a class="nav__mobile-link" href="tel:+17605550182" style="color:var(--amber);">(760) 555-0182</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- Page Header -->
+<section class="section" style="padding-top:var(--space-4xl);">
+  <div class="container">
+    <div class="section__label">What We Do</div>
+    <h1 class="section__title">Our Services</h1>
+    <p class="section__subtitle">Factory-certified repairs for every make and model. From routine maintenance to complex diagnostics — we've got you covered.</p>
+  </div>
+</section>
+
+<!-- Services Grid -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="services-grid" role="list" aria-label="Services list">
+
+      <article class="card card--elevated service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">🔧</div>
+        <div class="service-card__title">Engine Diagnostics</div>
+        <p class="service-card__desc">Advanced OBD-II scanning, compression tests, and full engine analysis. We identify root causes — not symptoms — using factory-level diagnostic tools.</p>
+        <div class="service-card__price">From $89 · Most same-day</div>
+      </article>
+
+      <article class="card card--elevated service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">⚙️</div>
+        <div class="service-card__title">Transmission Service</div>
+        <p class="service-card__desc">Fluid flushes, filter replacement, clutch adjustments, and full rebuilds on automatic and manual transmissions. Every make and model.</p>
+        <div class="service-card__price">From $149 · Auto & Manual</div>
+      </article>
+
+      <article class="card card--elevated service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">🛞</div>
+        <div class="service-card__title">Brake Systems</div>
+        <p class="service-card__desc">Pad and rotor replacement, brake fluid flush, ABS diagnostics, and complete brake line repair. We test every job on our brake dynamometer.</p>
+        <div class="service-card__price">From $129 · Pads & Rotors</div>
+      </article>
+
+      <article class="card card--elevated service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">🔋</div>
+        <div class="service-card__title">EV & Hybrid</div>
+        <p class="service-card__desc">Battery health checks, inverter diagnostics, regenerative brake service, and high-voltage system maintenance for all EV and hybrid platforms.</p>
+        <div class="service-card__price">From $119 · Certified EV Tech</div>
+      </article>
+
+      <article class="card card--elevated service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">🏎️</div>
+        <div class="service-card__title">Suspension & Steering</div>
+        <p class="service-card__desc">Shocks, struts, control arms, tie rods, and alignment. We restore factory ride quality and handling precision.</p>
+        <div class="service-card__price">From $99 · Alignment incl.</div>
+      </article>
+
+      <article class="card card--elevated service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">⚡</div>
+        <div class="service-card__title">Electrical Systems</div>
+        <p class="service-card__desc">Alternator, starter, wiring harness repair, battery testing, and full electrical diagnostics. We trace faults others can't find.</p>
+        <div class="service-card__price">From $79 · Full diagnosis</div>
+      </article>
+
+      <article class="card card--elevated service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">❄️</div>
+        <div class="service-card__title">A/C & Heating</div>
+        <p class="service-card__desc">Refrigerant recharge, compressor replacement, heater core repair, and full climate system diagnostics.</p>
+        <div class="service-card__price">From $89 · R-134a & R-1234yf</div>
+      </article>
+
+      <article class="card card--elevated service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">🛢️</div>
+        <div class="service-card__title">Oil & Fluid Service</div>
+        <p class="service-card__desc">Synthetic and conventional oil changes, coolant flush, power steering fluid, differential fluid, and brake fluid service.</p>
+        <div class="service-card__price">From $49 · Synthetic available</div>
+      </article>
+
+      <article class="card card--elevated service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">🔍</div>
+        <div class="service-card__title">Pre-Purchase Inspection</div>
+        <p class="service-card__desc">Comprehensive 150-point inspection before you buy. Engine, transmission, frame, electrical, and road test — full written report included.</p>
+        <div class="service-card__price">$149 flat · Same-day report</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container" style="text-align:center;">
+    <h2 class="cta-banner__title">Ready to Book?</h2>
+    <p style="color:var(--chrome);margin-bottom:var(--space-lg);">Most services available within 24 hours. Free loaner vehicles for repairs over 4 hours.</p>
+    <a class="btn btn--primary" href="contact.html">Book Appointment →</a>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">
+          <div class="footer__logo-mark" aria-hidden="true">⚙</div>
+          APEX<span>MOTO</span>
+        </div>
+        <p class="footer__tagline">Factory-certified auto repair in San Marcos, CA. Honest, expert service since 1998.</p>
+      </div>
+      <nav aria-label="Services">
+        <div class="footer__col-title">Services</div>
+        <ul class="footer__col-links" role="list">
+          <li><a class="footer__col-link" href="services.html">Engine Diagnostics</a></li>
+          <li><a class="footer__col-link" href="services.html">Transmission Service</a></li>
+          <li><a class="footer__col-link" href="services.html">Brake Systems</a></li>
+          <li><a class="footer__col-link" href="services.html">EV &amp; Hybrid</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Company">
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__col-links" role="list">
+          <li><a class="footer__col-link" href="about.html">About Us</a></li>
+          <li><a class="footer__col-link" href="reviews.html">Reviews</a></li>
+          <li><a class="footer__col-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        <div class="footer__col-title">Contact</div>
+        <ul class="footer__col-links" role="list" style="font-style:normal;">
+          <li><a class="footer__col-link" href="tel:+17605550182">(760) 555-0182</a></li>
+          <li><a class="footer__col-link" href="mailto:service@apexmoto.com">service@apexmoto.com</a></li>
+          <li><span class="footer__col-link">2140 Industrial Blvd, Unit 4</span></li>
+          <li><span class="footer__col-link">San Marcos, CA 92069</span></li>
+        </ul>
+      </address>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">&copy; 2025 Apex Moto Group, Inc. All rights reserved.</div>
+      <nav class="footer__legal" aria-label="Legal links">
+        <a class="footer__legal-link" href="#">Privacy Policy</a>
+        <a class="footer__legal-link" href="#">Terms of Service</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
