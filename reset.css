@@ -1,0 +1,159 @@
+/* ============================================================
+   APEX MOTO — Reset & Base
+   reset.css
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+ul, ol { list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+/* ── Utility Classes ── */
+.container {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.section {
+  padding-block: var(--section-gap);
+}
+
+.text-amber { color: var(--amber); }
+.text-muted  { color: var(--color-text-muted); }
+.text-dim    { color: var(--color-text-dim); }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Divider ── */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+}
+
+/* ── Tag / Pill ── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  background: var(--color-surface-2);
+}
+
+.tag.tag--amber {
+  background: rgba(245,166,35,0.1);
+  color: var(--amber);
+  border-color: rgba(245,166,35,0.25);
+}
+
+.tag.tag--rust {
+  background: rgba(201,66,8,0.12);
+  color: #ff7a46;
+  border-color: rgba(201,66,8,0.3);
+}
+
+/* ── Section Header ── */
+.section-eyebrow {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--amber);
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.section-title em {
+  font-style: normal;
+  color: var(--amber);
+}
+
+.section-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  max-width: 560px;
+}

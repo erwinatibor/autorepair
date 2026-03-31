@@ -1,0 +1,74 @@
+/* ============================================================
+   APEX MOTO — Design Tokens & CSS Variables
+   variables.css
+   ============================================================ */
+
+:root {
+  /* ── Color Palette ── */
+  --ink:        #0c0b09;
+  --steel:      #161512;
+  --plate:      #1e1c18;
+  --zinc:       #27261f;
+  --iron:       #312f28;
+  --rust:       #C94208;
+  --amber:      #F5A623;
+  --amber-lt:   #F7BC5A;
+  --chrome:     #c4bfb5;
+  --fog:        #8a8679;
+  --mist:       #5e5c55;
+  --white:      #f2eee6;
+  --off-white:  #e8e3d8;
+
+  /* ── Semantic Colors ── */
+  --color-primary:    var(--amber);
+  --color-secondary:  var(--rust);
+  --color-bg:         var(--ink);
+  --color-surface:    var(--plate);
+  --color-surface-2:  var(--zinc);
+  --color-text:       var(--white);
+  --color-text-muted: var(--chrome);
+  --color-text-dim:   var(--fog);
+  --color-border:     rgba(255,255,255,0.07);
+  --color-border-md:  rgba(255,255,255,0.12);
+
+  /* ── Typography ── */
+  --font-display:  'Barlow Condensed', sans-serif;
+  --font-body:     'Barlow', sans-serif;
+
+  /* ── Spacing Scale ── */
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   16px;
+  --space-lg:   24px;
+  --space-xl:   40px;
+  --space-2xl:  64px;
+  --space-3xl:  96px;
+  --space-4xl:  128px;
+
+  /* ── Border Radius ── */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  20px;
+  --radius-pill: 999px;
+
+  /* ── Shadows ── */
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.4);
+  --shadow-md:  0 4px 20px rgba(0,0,0,0.5);
+  --shadow-lg:  0 8px 40px rgba(0,0,0,0.6);
+  --glow-amber: 0 0 40px rgba(245,166,35,0.15);
+
+  /* ── Transitions ── */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:    cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:   150ms;
+  --dur-base:   250ms;
+  --dur-slow:   400ms;
+
+  /* ── Layout ── */
+  --container-max:  1280px;
+  --container-pad:  clamp(20px, 5vw, 60px);
+  --nav-height:     68px;
+  --section-gap:    clamp(80px, 10vw, 140px);
+}
